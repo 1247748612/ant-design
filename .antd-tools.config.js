@@ -19,18 +19,9 @@ function finalizeCompile() {
   }
 }
 
-function finalizeDist() {
-  if (fs.existsSync(path.join(__dirname, './dist'))) {
-    fs.copyFileSync(restCssPath, path.join(process.cwd(), 'dist', 'reset.css'));
-  }
-}
-
 module.exports = {
   compile: {
     finalize: finalizeCompile,
-  },
-  dist: {
-    finalize: finalizeDist,
   },
   bail: true,
 };

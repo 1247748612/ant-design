@@ -15,6 +15,7 @@
     "jsx": "react",
     "jsxFactory": "React.createElement",
     "jsxFragmentFactory": "React.Fragment",
+    "resolveJsonModule": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "noImplicitAny": true,
